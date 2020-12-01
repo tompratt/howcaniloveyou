@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>How Can I Love You</title>
+	<style>
+		body {
+			margin: 0px;
+			background: black;
+			color: white;
+			font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+			font-size: 1.5vw;
+			-webkit-text-stroke: 1px black; 
+			text-stroke: 1px black;
+			font-weight: bold;
+		}
+		html, * {
+			box-sizing: border-box;
+		}
+		#images {
+			line-height: 0px;
+			overflow: auto;
+		}
+		#images img {
+			width: 100%;
+			height: auto;
+		}
+		#text {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 20px 0px;
+			z-index: 2;
+			pointer-events: none;
+		}
+		.swiper-container {
+			width: 100%;
+      		height: 100vh;
+      		height: calc(var(--vh) * 100);
+		}
+		h1 {
+			font-size: 1.5vw;
+			margin: 0px;
+		}
+		.top {
+			text-align: center;
+		}
+		p {
+			margin: 0px;
+		}
+		.description p {
+			text-indent: 50px;
+		}
+		.description p:first-child {
+			text-indent: 0px;
+		}
+		.specs {
+			margin-top: 30px;
+		}
+		.bottom {
+			text-align: center;
+		}
+		.wrap {
+			padding: 0px 20px;
+			margin: 0 auto;
+			max-width: 60%;
+		}
+		a {
+			color: inherit;
+			text-decoration: none;
+			border-bottom: 1px solid;
+			-webkit-text-stroke: 1px black; 
+			text-stroke: 1px black;
+			pointer-events: auto;
+		}
+		a:hover {
+			border-color: transparent;
+		}
+		@media screen and (max-width: 800px) {
+			body, h1 {
+				font-size: 14px;
+			}
+			.wrap {
+				width: 100%;
+				max-width: 100%;
+			}
+			#images img {
+				width: 100%;
+				height: 100vh;
+				height: calc(var(--vh) * 100);
+				object-fit: contain;
+
+			}
+		}
+		@media screen and (min-width: 801px) {
+			#images img {
+				width: 100%;
+				height: calc(var(--vh) * 100);
+				object-fit: cover;
+
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha512-uCQmAoax6aJTxC03VlH0uCEtE0iLi83TW1Qh6VezEZ5Y17rTrIE+8irz4H4ehM7Fbfbm8rb30OkxVkuwhXxrRg==" crossorigin="anonymous" />
+</head>
+<body>
+
+<section id="images">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/cg1.jpg" /></div>
+			<div class="swiper-slide"><img src="img/cg2.jpg" /></div>
+			<div class="swiper-slide"><img src="img/cg3.jpg" /></div>
+			<div class="swiper-slide"><img src="img/cg4.jpg" /></div>
+			<div class="swiper-slide"><img src="img/cg5.jpg" /></div>
+			<div class="swiper-slide"><img src="img/cg6.jpg" /></div>
+		</div>
+	</div>
+</section>
+
+<section id="text">
+	<div class="top">
+		<div class="wrap">
+			<h1>How Can I Love You</h1>
+		</div>
+	</div>
+	<div class="middle">
+		<div class="wrap">
+			<div class="description">
+				<p>In the year 2020, people speak of various far-right fringe groups almost as if they’re sports teams. Where are they from? What’s their badge and uniform? What type of tactics do they employ? Although the internet age has taken the frequency of these questions to dizzying new heights, this is far from a new phenomenon in America.</p>
+				<p>Artist <a href="http://chrisglickman.co/" target="_blank">Chris Glickman</a> is looking to gain a new understanding of these movements through decoding the vast visual language they have established over the decades, creating a survey that speaks to their ideals in violence, romance and everything in-between. This particular title focuses on the Reagan years, arguably the most fertile incubation period for these strains of thought. Scouring the magazines that once served as the pre-internet source of radicalization, Chris has crafted a captivating assemblage that not only illustrates their motives, but also makes the reader question their own relationship to the aesthetics these groups have popularized.</p>
+			</div>
+			<div class="specs">
+				<p>By <a href="http://chrisglickman.co/" target="_blank">Chris Glickman</a><br/>
+					Published by <a href="https://cataloguelibrary.co" target="_blank">Catalogue Library</a><br/>
+				Percentage of proceeds benefiting <a href="https://www.raicestexas.org/" target="_blank">Raices</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="wrap">
+			<p><a href="https://cataloguelibrary.co" target="_blank">Purchase Pre-order <i>Here</i></a></p>
+		</div>
+	</div>
+</section>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+
+<script>
+
+	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+	$(document).ready(function(){
+		var mySwiper = new Swiper('.swiper-container', {
+		    direction: 'vertical',
+		    loop: true,
+		    freeMode: true,
+		    mousewheel: {
+			    invert: false,
+			}
+		});
+	})
+</script>
+
+</body>
+</html>
