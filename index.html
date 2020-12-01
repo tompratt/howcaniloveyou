@@ -87,10 +87,14 @@
 			}
 			#images img {
 				width: 100%;
-				height: 100vh;
-				height: calc(var(--vh) * 100);
-				object-fit: contain;
+				height:33.33vh;
+				height: calc(var(--vh) * 33.33);
+				object-fit: cover;
 				opacity: .95;
+			}
+			.swiper-slide {
+				height: 33.33vh !important;
+				height: calc(var(--vh) * 33.33) !important;
 			}
 		}
 		@media screen and (min-width: 801px) {
@@ -171,8 +175,14 @@ window.addEventListener('resize', () => {
 		    direction: 'vertical',
 		    loop: true,
 		    freeMode: true,
+		    slidesPerView: 3,
 		    mousewheel: {
 			    invert: false,
+			},
+			breakpoints: {
+				801: {
+					slidesPerView: 1
+				}
 			}
 		});
 	})
